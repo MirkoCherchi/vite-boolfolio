@@ -7,7 +7,7 @@ export default {
 
 <template>
     <footer class="bg-warning-subtle">
-        <div class="container d-flex justify-content-between py-2">
+        <div class="container d-flex justify-content-between py-3">
             <div>Logo</div>
             <div>Made by Mirko Cherchi</div>
         </div>

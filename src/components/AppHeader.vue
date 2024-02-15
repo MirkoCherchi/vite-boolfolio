@@ -7,9 +7,15 @@ export default {
 
 <template>
     <header class="bg-success">
-        <div class="container d-flex justify-content-between py-2">
+        <div class="container d-flex justify-content-between py-3">
             <div>Logo</div>
-            <div>Made by Mirko Cherchi</div>
+            <div>
+                <ul class="d-flex gap-3 list-unstyled p-0 m-0">
+                    <li>Home</li>
+                    <li>Project</li>
+                    <li>Profile</li>
+                </ul>
+            </div>
         </div>
     </header>
 </template>

@@ -1,46 +1,22 @@
 <script>
 import AppHeader from "./components/AppHeader.vue";
-import AppMain from "./components/AppMain.vue";
 import AppFooter from "./components/AppFooter.vue";
-import axios from "axios";
 
 export default {
     name: "Boolfolio",
-    data() {
-        return {
-            projects: [],
-            baseUrl: "http://127.0.0.1:8000",
-            apiUrl: {
-                projects: "/api/projects",
-            },
-        };
-    },
+
     components: {
         AppHeader,
-        AppMain,
         AppFooter,
     },
-    methods: {
-        getProjects() {
-            axios
-                .get(this.baseUrl + this.apiUrl.projects)
-                .then((response) => {
-                    this.projects = response.data.results;
-                })
-                .catch((error) => {
-                    console.log(error);
-                });
-        },
-    },
-    created() {
-        this.getProjects();
-    },
+
 };
 </script>
 
 <template>
     <AppHeader />
-    <AppMain :projects="projects" />
+    <!-- <AppMain :projects="projects" /> -->
+    <router-view></router-view>
     <AppFooter />
 </template>
 

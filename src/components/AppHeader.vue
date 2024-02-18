@@ -11,9 +11,10 @@ export default {
             <div>Logo</div>
             <div>
                 <ul class="d-flex gap-3 list-unstyled p-0 m-0">
-                    <li>Home</li>
-                    <li>Project</li>
-                    <li>Profile</li>
+                    <li><router-link class="text-white" :to="{ name: 'home' }">Home</router-link></li>
+                    <li><router-link class="text-white" :to="{ name: 'projects' }">Projects</router-link></li>
+                    <li><router-link class="text-white" :to="{ name: 'profile' }">Profile</router-link></li>
+
                 </ul>
             </div>
         </div>
